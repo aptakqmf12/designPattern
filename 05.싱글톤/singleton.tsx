@@ -1,7 +1,9 @@
 let instance: any;
-let globalState = { name: "ktw" };
+let globalState = { name: "김태완" };
 
 export class Singleton {
+  //   private static instance: any;
+
   constructor() {
     if (instance) {
       return instance;
