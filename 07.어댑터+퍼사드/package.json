@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "dependencies": {
+    "@datadog/browser-logs": "^5.8.0",
+    "@sentry/browser": "^7.99.0"
+  }
+}
