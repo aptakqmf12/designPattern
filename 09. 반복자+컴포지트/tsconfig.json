@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "jsx": "react",
+    "sourceMap": true,
+    "typeRoots": ["src/@types/types"]
+  }
+}
