@@ -1,10 +1,9 @@
-// 컴포넌트 인터페이스
 interface Component {
   display(indentation: number): void;
 }
 
-// 개인을 나타내는 클래스
-export class Employee implements Component {
+// 개인
+export class People implements Component {
   constructor(private name: string) {}
 
   display(indentation: number): void {
@@ -12,7 +11,7 @@ export class Employee implements Component {
   }
 }
 
-// 팀을 나타내는 클래스
+// 팀
 export class Team implements Component {
   private children: Component[] = [];
 
@@ -30,7 +29,7 @@ export class Team implements Component {
   }
 }
 
-// 부서를 나타내는 클래스
+// 부서
 export class Department implements Component {
   private children: Component[] = [];
 

@@ -1,5 +1,5 @@
 import { IIterator, NumberIterator, StringIterator } from "./iterator";
-import { Employee, Team, Department } from "./composite";
+import { People, Team, Department } from "./composite";
 
 // 반복자 패턴
 const numbers: number[] = [1, 2, 3, 4, 5];
@@ -17,23 +17,27 @@ while (strIterator.hasNext()) {
 }
 
 // 컴포지트 패턴
-const employee1 = new Employee("John Doe");
-const employee2 = new Employee("Jane Smith");
+// const employee1 = new People("김태완");
+// const employee2 = new People("이도경");
 
-const team1 = new Team("Development Team");
-team1.add(employee1);
-team1.add(employee2);
+// const team1 = new Team("프론트엔드팀");
+// team1.add(employee1);
+// team1.add(employee2);
 
-const employee3 = new Employee("Alice Johnson");
-const employee4 = new Employee("Bob Brown");
+// const employee3 = new People("김송하");
 
-const team2 = new Team("Marketing Team");
-team2.add(employee3);
-team2.add(employee4);
+// const team2 = new Team("슈퍼루키 독고다이");
+// team2.add(employee3);
 
-const department = new Department("Engineering Department");
-department.add(team1);
-department.add(team2);
+// const employee4 = new People("장재형");
 
-// 전체 조직도 출력
-department.display(0);
+// const team3 = new Team("IOS팀");
+// team3.add(employee4);
+
+// const department = new Department("프로그래머스 개발자 스터디 부서");
+// department.add(team1);
+// department.add(team2);
+// department.add(team3);
+
+// // 전체 조직도 출력
+// department.display(0);
